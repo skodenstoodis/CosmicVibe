@@ -3,8 +3,11 @@ CosmicVibes a web app that lets you explore the beauty of outer space through st
 
 # Features
 -Randomly generated space backgrounds
+
 -Interactive background movement
+
 -Glass effect behind the text
+
 -Dynamic text color based on the background image (not working)
 
 # Usage
