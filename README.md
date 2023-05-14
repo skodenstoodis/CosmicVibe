@@ -21,4 +21,4 @@ Vibrant.js for color extraction from images
 CosmicVibes is licensed under the MIT License. See the LICENSE file for more information.
 
 # Contact
-If you have any questions or feedback about CosmicVibes, please contact us at [sokdenstoodis32@gmail.com]. We would love to hear from you!
+If you have any questions or feedback about CosmicVibes, please contact us at [skodenstoodis32@gmail.com]. We would love to hear from you!
