@@ -55,8 +55,8 @@ function handleOrientation(event) {
   const gamma = event.gamma; // Y-axis rotation [-90, 90]
 
   // Calculate the background position based on the device orientation
-  const x = (gamma / 90) * 10;
-  const y = (beta / 180) * 10;
+  const x = (gamma / 90) * 2;
+  const y = (beta / 180) * 2;
 
   // Set the background position
   background.style.backgroundPosition = `${x}% ${y}%`;
