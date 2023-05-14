@@ -41,6 +41,27 @@ function loadRandomImage() {
     });
 }
 
+// Check if the device supports the DeviceOrientationEvent
+if (window.DeviceOrientationEvent) {
+  // Add an event listener for the device orientation change
+  window.addEventListener('deviceorientation', handleOrientation);
+}
+
+// Handle the device orientation change
+function handleOrientation(event) {
+  // Get the device orientation angles
+  const alpha = event.alpha; // Z-axis rotation [0, 360]
+  const beta = event.beta; // X-axis rotation [-180, 180]
+  const gamma = event.gamma; // Y-axis rotation [-90, 90]
+
+  // Calculate the background position based on the device orientation
+  const x = (gamma / 90) * 50;
+  const y = (beta / 180) * 50;
+
+  // Set the background position
+  background.style.backgroundPosition = `${x}% ${y}%`;
+}
+
 // Move the background when the cursor is present on top of the page
 document.addEventListener('mousemove', event => {
   const x = event.clientX / window.innerWidth - 0.5;
